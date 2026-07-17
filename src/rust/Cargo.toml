@@ -1,0 +1,22 @@
+[package]
+name = 'sqlpolyglot'
+publish = false
+version = '0.1.0'
+edition = '2021'
+rust-version = '1.65'
+
+[lib]
+crate-type = [ 'rlib', 'staticlib' ]
+name = 'sqlpolyglot'
+
+[[bin]]
+name = 'document'
+path = 'document.rs'
+
+[dependencies]
+extendr-api = '*'
+polyglot-sql = { version = "0.5", default-features = false, features = ["transpile"] }
+
+[profile.release]
+lto = true
+codegen-units = 1

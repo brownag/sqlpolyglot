@@ -1,0 +1,4 @@
+src/rust/vendor.tar.xz
+src/rust/vendor
+src/Makevars
+src/Makevars.win
