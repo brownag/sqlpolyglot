@@ -14,7 +14,7 @@ Source: planning/GOALS.md (Circled Goal G1)
 
 | Wave | Task | Status |
 |---|---|---|
-| 1 | 1.1.1 Registry coverage tests | pending |
+| 1 | 1.1.1 Registry coverage tests | done (code commit 868385b) |
 
 ## Task reports
 
