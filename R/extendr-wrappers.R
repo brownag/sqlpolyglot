@@ -15,4 +15,7 @@ NULL
 #' @export
 transpile_sql <- function(sql, read_dialect, write_dialect) .Call(wrap__transpile_sql, sql, read_dialect, write_dialect)
 
+#' Returns all unique supported dialect names registered in the engine.
+get_dialects <- function() .Call(wrap__get_dialects)
+
 # nolint end

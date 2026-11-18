@@ -31,18 +31,13 @@ sql_transpile <- function(sql, from, to) {
 
 #' Get all supported SQL dialects
 #'
-#' Returns a character vector of all supported dialects for the `polyglot` engine.
+#' Returns a character vector of all supported dialects as defined by the 
+#' underlying Rust engine.
 #'
 #' @return A character vector of dialect names.
 #'
 #' @export
 sql_supported_dialects <- function() {
-  # In a production implementation, this could be dynamically fetched from the Rust backend.
-  # For now, we provide a comprehensive list of commonly supported dialects.
-  c(
-    "postgres", "postgresql", "mysql", "sqlite", "sqlite3", 
-    "bigquery", "snowflake", "redshift", "duckdb", "oracle", 
-    "sqlserver", "mssql", "teradata", "clickhouse", "firebird",
-    "db2", "mariadb", "hsql", "presto", "trino", "spark", "hive"
-  )
+  # Call the Rust function directly
+  get_dialects()
 }

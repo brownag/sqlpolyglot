@@ -10,5 +10,6 @@ sql_supported_dialects()
 A character vector of dialect names.
 }
 \description{
-Returns a character vector of all supported dialects for the \code{polyglot} engine.
+Returns a character vector of all supported dialects as defined by the
+underlying Rust engine.
 }
