@@ -65,4 +65,4 @@ Run from the repository root.
 ## References
 * `planning/GOALS.md` -- active goals and dependencies.
 * `tools/msrv.R` -- authoritative Rust version check.
-* [extendr docs](https://extendr.github.io/) and [rextendr](https://extendr.github.io/rextendr/) -- binding patterns.
+* [extendr docs](https://extendr.rs/) and [rextendr](https://extendr.rs/rextendr/) -- binding patterns.
