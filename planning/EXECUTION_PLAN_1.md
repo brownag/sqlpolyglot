@@ -69,5 +69,5 @@ Source: planning/GOALS.md, Circled Goal G1.
 - **Constraints (do not touch)**: any file other than `tests/testthat/test-transpile.R`; `R/`; `src/`; `DESCRIPTION`; `NAMESPACE`; `man/`; `planning/` except the worker's own report in STATE_1.md.
 - **Acceptance**:
   - `R CMD INSTALL --no-test-load .` succeeds
-  - `Rscript -e 'testthat::test_dir("tests/testthat", reporter="summary")'` exits 0 with zero failures
+  - `Rscript -e 'testthat::test_dir("tests/testthat", package="sqlpolyglot", load_package="installed", reporter="summary", stop_on_failure=TRUE)'` exits 0 with zero failures
   - `cargo check --manifest-path src/rust/Cargo.toml` passes (unchanged, must stay green)
